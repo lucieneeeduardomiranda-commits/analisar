@@ -73,6 +73,7 @@ with aba_entrada:
     "Contexto do Jogo (min 60)",
     [
         "Jogo equilibrado",
+        "Favorito empatando",
         "Favorito perdendo",
         "Favorito ganhando",
         "Favorito ganhando bem"
@@ -175,4 +176,5 @@ with aba_analise:
 
         st.write("**Por Confiança**")
         st.dataframe(analise_segmentada(df, "confianca"))
+
 
