@@ -69,12 +69,12 @@ with aba_entrada:
     odd = st.number_input("Odd", step=0.01)
     stake = st.number_input("Stake", value=1.0)
 
-    ritmo = st.selectbox(
+   ritmo = st.selectbox(
     "Contexto do Jogo (min 60)",
     [
         "Jogo equilibrado",
-        "Favorito empatando",
         "Favorito perdendo",
+        "Favorito empatando",
         "Favorito ganhando",
         "Favorito ganhando bem"
     ]
@@ -176,5 +176,6 @@ with aba_analise:
 
         st.write("**Por Confiança**")
         st.dataframe(analise_segmentada(df, "confianca"))
+
 
 
